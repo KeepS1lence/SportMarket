@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спорт Мастер</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключаем внешний CSS -->
+</head>
+<body>
+
+<header>
+    <table>
+        <tr>
+           <td><a href="https://keeps1lence.github.io/zzz/dist/index.html">О компании </a></td>
+            <td><a href="#" id="catalogLink">Каталог</a></td>
+            <td> <a href="https://keeps1lence.github.io/sport/dist/index.html">Контакты</a></td>
+        </tr>
+    </table>
+    <h1>Спорт Мастер</h1>
+    <img class="left" src="" width="300px">
+    <img class="right" src="" width="300px">
+    <img class="center" src="" width="600px">
+</header>
+
+<!-- Всплывающее окно -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Каталог</h2>
+        <p><a href="https://sportmaster.kz/ru/catalog/muzhskaya_obuv/krossovki/"><img src="https://basket-10.wbbasket.ru/vol1589/part158940/158940982/images/big/1.webp"width="150px"></a>
+          <a href="https://sportmaster.kz/ru/product/29707630299/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyrhHE-txuvmzB8LbcIa7aqRl9S2qoGK3R1w&s"width="150px"></a>
+          <a href="https://sportmaster.kz/ru/catalog/zhenskaya_odezhda/bryuki/?f-pricefrom=347990&f-priceto=347990"><img src="https://ir-3.ozone.ru/s3/multimedia-r/c400/6535731075.jpg"width="150px"></a>
+          <a href="https://sportmaster.kz/ru/catalog/products/search.do/?text=%D0%BF%D0%B5%D1%80%D1%87%D0%B0%D1%82%D0%BA%D0%B8&f-pricefrom=128990&f-priceto=128990"><img src="https://soccershop.by/image/cache/catalog/Acses/gloves/CU1589-010_04-nike-rukavice-600x600-1024x1024.jpg"width="150px"></a>
+          <a href="https://sportmaster.kz/ru/catalog/muzhskaya_odezhda/futbolki/?f-pricefrom=70990&f-priceto=70990"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSazEc5pZPdZk-oXk7aAq6I3fraq4ysm3zM4g&s"width="150px"></a>
+          <a href="https://sportmaster.kz/ru/catalog/products/search.do/?text=%D1%80%D0%B5%D0%BD%D0%B5%D0%BD%D1%8C&f-pricefrom=9990&f-priceto=9990"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFHKu8lLVtcmbSgR7sDC5e4zrkJ9WVX9l--Q&s"width="150px"></a>
+        </p>
+    </div>
+</div>
+
+<script>
+    // Получаем элементы
+    var modal = document.getElementById("myModal");
+    var link = document.getElementById("catalogLink");
+    var span = document.getElementsByClassName("close")[0];
+
+    // Когда пользователь нажимает на ссылку "Каталог"
+    link.onclick = function(event) {
+        event.preventDefault(); // Отключаем переход по ссылке
+        modal.style.display = "block"; // Показываем окно
+    }
+
+    // Когда пользователь нажимает на кнопку закрытия
+    span.onclick = function() {
+        modal.style.display = "none"; // Закрываем окно
+    }
+
+    // Когда пользователь кликает вне окна, закрываем его
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
